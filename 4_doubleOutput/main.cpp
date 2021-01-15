@@ -1,0 +1,1 @@
+#include <iostream>#include <fstream>#include <iomanip>using namespace std;int main(){	ifstream input("input.txt");	double tmp;	if (input.is_open())	{		while (input >> tmp)			cout << fixed << setprecision(3) << tmp << endl;	}	return 0;}
